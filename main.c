@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include "bracketTypes.h"
+#include "structDefines.h"
+#include "functionDefines.h"
 
 // ERROR_LOADING_FILE -1
 // ERROR_ALOCATING_MEMORY -2
@@ -9,44 +11,6 @@
 #define STOG_IS_EMPTY               '3'
 
 //define  CHECKFUNCTION CODE
-#define OPENING1stCLASS             4               //(
-#define OPENING2rdCLASS             5               //[
-#define OPENING3rdCLASS             6               //{
-#define CLOSING1stCLASS             7               //)
-#define CLOSING2ndCLASS             8               //]
-#define CLOSING3rdCLASS             9               //}
-#define TAB_FOUND                   10              //\t
-#define NEW_LINE_FOUND              11              //\n
-
-
-typedef struct Pozicija
-{
-    int columnn;
-    int line;
-}position;
-
-typedef struct ELEMENT *Pok;
-typedef struct ELEMENT
-{
-    char znak;
-    position pos;
-    int id;     //ako je ne zatvorena otvorena zagrada id = 1 , ako je ima zagrada viska id = 2
-    Pok next;
-}element;
-
-int ucitavanjeIzDatoteke(char[], Pok);
-int checker(char znak);
-void testStog(Pok root);
-Pok alokacija();
-int ispisStoga(Pok);
-Pok copy(Pok , Pok);
-
-int stogPush(Pok, Pok );
-Pok stogPop(Pok);
-position copyPosition(position, position);
-char firstOnStog(Pok);
-void ispisStogaGresaka(Pok);
-void copyAll(Pok, Pok);
 
 int main() {
 
