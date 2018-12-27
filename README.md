@@ -1,2 +1,2 @@
 # CompilerBracketsTester
-During algorithm and structure class I tried to implement compiler (what i thought) brackets checker
+During data structure and algorithms class I tried to implement compiler (what i thought) brackets checker
